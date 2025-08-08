@@ -9,7 +9,7 @@ const App = () => {
   const [isUserLoggedIn, setIsUserLoggedIn] = useState(true);
 
   return (
-    <div className="flex justify-center h-screen bg-gray-300">
+    <div className="flex justify-center h-screen bg-accent">
       <HomeComponent
         isUserLoggedIn={isUserLoggedIn}
         setIsUserLoggedIn={setIsUserLoggedIn}

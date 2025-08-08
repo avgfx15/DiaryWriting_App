@@ -1,5 +1,6 @@
 import React from "react";
 import NavbarComponent from "../NavbarComponent/NavbarComponent";
+import DiaryInputComponent from "../DiaryInputComponent/DiaryInputComponent";
 
 const HomeComponent = ({ isUserLoggedIn, setIsUserLoggedIn }) => {
   return (
@@ -8,6 +9,7 @@ const HomeComponent = ({ isUserLoggedIn, setIsUserLoggedIn }) => {
         isUserLoggedIn={isUserLoggedIn}
         setIsUserLoggedIn={setIsUserLoggedIn}
       />
+      <DiaryInputComponent />
     </div>
   );
 };

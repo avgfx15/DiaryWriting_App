@@ -33,12 +33,12 @@
 }
 
 /* Dark Theme */
-.theme_Dark {
-  --color-primary: #1e293b;
-  --color-secondary: #f8fafc;
-  --color-accent: #6366f1;
+.theme_Pink {
+  --color-primary: #dd9ba6;
+  --color-secondary: #616975;
+  --color-accent: #ffdfe5;
 
-  --text-color-primary: #ffffff;
+  --text-color-primary: #000000;
   --text-color-secondary: #000000;
 
   --font-family-body: 'Verdana', sans-serif;
@@ -47,10 +47,10 @@
 
 /* Gray */
 
-.theme_Gray {
-  --color-primary: #384959;
-  --color-secondary: #88bdf2;
-  --color-accent: #bdddfc;
+.theme_Slate {
+  --color-primary: #293947;
+  --color-secondary: #737f8a;
+  --color-accent: #c3c8cd;
 
 
   --text-color-primary: #ffffff;
@@ -62,13 +62,13 @@
 
 /* Green Theme */
 .theme_Green {
-  --color-primary: #d1fae5;
-  --color-secondary: #064e3b;
-  --color-accent: #10b981;
+  --color-primary: #07240f;
+  --color-secondary: #59615b;
+  --color-accent: #a0a5a1;
 
 
-  --text-color-primary: #000000;
-  --text-color-secondary: #FFFFFF;
+  --text-color-primary: #FFFFFF;
+  --text-color-secondary: #000000;
 
   --font-family-body: 'Garamond', serif;
   --font-family-heading: 'Tahoma', sans-serif;
@@ -76,13 +76,13 @@
 
 /* Blue Theme */
 .theme_Blue {
-  --color-primary: #bfdbfe;
-  --color-secondary: #1e3a8a;
-  --color-accent: #2563eb;
+  --color-primary: #1e3a8a;
+  --color-secondary: #0e6ac5;
+  --color-accent: #bfdbfe;
 
 
-  --text-color-primary: #000000;
-  --text-color-secondary: #ffffff;
+  --text-color-primary: #FFFFFF;
+  --text-color-secondary: #000000;
 
   --font-family-body: 'Courier New', monospace;
   --font-family-heading: 'Franklin Gothic Medium', sans-serif;
@@ -93,21 +93,35 @@
 .theme_Purple {
   --color-primary: #0f0e47;
   --color-secondary: #505081;
-  --color-accent: #8686ac;
+  --color-accent: #b7b6c7;
 
   --text-color-primary: #FFFFFF;
-  --text-color-secondary: #FFFFFF;
+  --text-color-secondary: #000000;
 
   --font-family-body: 'Times New Roman', serif;
   --font-family-heading: 'Georgia', serif;
 
 }
 
-/* Black */
-.theme_Black {
-  --color-primary: #2b2b2b;
+/* Gray */
+.theme_Gray {
+  --color-primary: #333333;
   --color-secondary: #b3b3b3;
   --color-accent: #d4d4d4;
+
+  --text-color-primary: #ffffff;
+  --text-color-secondary: #000000;
+
+  --font-family-heading: 'Arial', sans-serif;
+  --font-family-body: 'Verdana', sans-serif;
+}
+
+
+/* Black */
+.theme_Black {
+  --color-primary: #131313;
+  --color-secondary: #8b8b8b;
+  --color-accent: #ebebeb;
 
   --text-color-primary: #ffffff;
   --text-color-secondary: #000000;

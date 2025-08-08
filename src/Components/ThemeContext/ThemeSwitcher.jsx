@@ -3,7 +3,15 @@ import { useContext } from "react";
 import { ThemeContext } from "./ThemeContext";
 import { useState } from "react";
 
-const themesName = ["Dark", "Gray", "Green", "Blue", "Purple", "Black"];
+const themesName = [
+  "Pink",
+  "Gray",
+  "Green",
+  "Blue",
+  "Purple",
+  "Slate",
+  "Black",
+];
 const ThemeSwitcher = () => {
   const { theme, setTheme } = useContext(ThemeContext);
 
