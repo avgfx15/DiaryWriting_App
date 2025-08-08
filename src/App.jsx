@@ -1,11 +1,19 @@
 import React from "react";
 
+// | Import Css
 import "./App.css";
+import HomeComponent from "./Components/HomeComponent/HomeComponent";
+import { useState } from "react";
 
 const App = () => {
+  const [isUserLoggedIn, setIsUserLoggedIn] = useState(true);
+
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline text-red-800">Diary App</h1>
+    <div className="flex justify-center h-screen bg-gray-300">
+      <HomeComponent
+        isUserLoggedIn={isUserLoggedIn}
+        setIsUserLoggedIn={setIsUserLoggedIn}
+      />
     </div>
   );
 };
