@@ -1,12 +1,17 @@
 import { useState } from "react";
 
-const DiaryInputComponent = () => {
-  const [inputValue, setInputValue] = useState("");
+const DiaryInputComponent = ({ addNewData, allDiaryData, setAllDiaryData }) => {
+  const [inputValue, setInputValue] = useState({
+    time: "",
+    date: "",
+    content: "",
+    remark: "",
+  });
 
   // * Handle Change
 
   const handleChange = (e) => {
-    const { name, value } = event.target;
+    const { name, value } = e.target;
     setInputValue((prevState) => ({
       ...prevState,
       [name]: value,
@@ -17,9 +22,17 @@ const DiaryInputComponent = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(inputValue);
+
+    addNewData(inputValue);
+    setInputValue({
+      time: "",
+      date: "",
+      content: "",
+      remark: "",
+    });
   };
 
+  // $ Render Function
   return (
     <div className="w-4/5 mx-auto">
       <h1 className="heading text-3xl text-center my-3">
@@ -36,6 +49,7 @@ const DiaryInputComponent = () => {
             id=""
             className="border border-white p-3 rounded-md w-full body"
             onChange={handleChange}
+            value={inputValue.time}
           />
         </div>
         <div className="flex flex-col input-group mb-3">
@@ -48,6 +62,7 @@ const DiaryInputComponent = () => {
             id=""
             className="border border-white p-3 rounded-md w-full body"
             onChange={handleChange}
+            value={inputValue.date}
           />
         </div>
         <div className="flex flex-col input-group mb-3">
@@ -61,6 +76,7 @@ const DiaryInputComponent = () => {
             rows="7"
             className="border border-white p-3 rounded-md w-full body"
             onChange={handleChange}
+            value={inputValue.content}
           />
         </div>
         <div className="flex flex-col input-group mb-3">
@@ -73,6 +89,7 @@ const DiaryInputComponent = () => {
             id=""
             className="border border-white p-3 rounded-md w-full body"
             onChange={handleChange}
+            value={inputValue.remark}
           />
         </div>
         <div className="text-center">
