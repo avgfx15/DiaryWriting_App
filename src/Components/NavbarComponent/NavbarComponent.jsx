@@ -32,7 +32,7 @@ const NavbarComponent = ({
           </li>
         </ul>
       </div>
-      <div>
+      {/* <div>
         {isUserLoggedIn ? (
           <div className="flex items-center gap-5 uppercase font-semibold hover:text-slate-300 transition duration-300">
             <p className="text-lg">User Name</p>
@@ -55,7 +55,7 @@ const NavbarComponent = ({
             </button>
           </div>
         )}
-      </div>
+      </div> */}
       <div>
         <ThemeSwitcher />
       </div>
