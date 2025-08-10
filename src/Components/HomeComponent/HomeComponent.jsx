@@ -24,14 +24,15 @@ const HomeComponent = ({
         showDiaryEntryForm={showDiaryEntryForm}
         setShowDiaryEntryForm={setShowDiaryEntryForm}
       />
-      {showDiaryEntryForm && (
+      {showDiaryEntryForm ? (
         <DiaryInputComponent
           addNewData={addNewData}
           allDiaryData={allDiaryData}
           setAllDiaryData={setAllDiaryData}
         />
+      ) : (
+        <DiaryDataDisplayComponent allDiaryData={allDiaryData} />
       )}
-      <DiaryDataDisplayComponent allDiaryData={allDiaryData} />
     </div>
   );
 };
